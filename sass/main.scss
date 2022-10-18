@@ -1,0 +1,53 @@
+// google font imports
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
+$roboto-slab: 'Roboto Condensed', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$coromorant: 'Cormorant', serif;
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//default imports
+@import 'base/defaults';
+@import 'base/common';
+
+// NavLanding section imports
+@import 'NavLanding/NavLanding';
+@import 'NavLanding/NavBar';
+@import 'NavLanding/Landing';
+
+//Section 1 imports
+@import 'Sec1/Sec1';
+
+//Section 2 imports
+@import 'Sec2/Sec2';
+
+//Section 3 imports
+@import 'Sec3/Sec3';
+
+//Section 4 imports
+@import 'Sec4/Sec4';
+
+//Section 5 imports
+@import 'Sec5/Sec5';
+
+//Section 6 imports
+@import 'Sec6/Sec6';
+
+//Section 7 imports
+@import 'Sec7/Sec7';
+
+//Section 8 imports
+@import 'Sec8/Sec8';
+
+//Section 9 imports
+@import 'Sec9/Sec9';
+
+//Footer import
+@import 'Footer/Footer'

@@ -1,0 +1,32 @@
+.sec4{
+    height: 620px;
+    width: 92%;
+    padding: 20px 0 0 0;
+    border-top: 2px solid #AEAEAC;
+    border-top-style: dotted;
+    position: relative;
+    border-bottom: 2px solid #AEAEAC;
+    border-bottom-style: dotted;
+}
+
+.sec4-img{
+    height: 600px;
+    width: 100%;
+}
+
+.sec4-title{
+    position: absolute;
+    left: 39%;
+    top: 64%;
+    font-family: $poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.sec4-textbox{
+    position: absolute;
+    left: 28%;
+    bottom: 10%;
+    color: white;
+}

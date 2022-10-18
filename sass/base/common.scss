@@ -1,0 +1,56 @@
+// textbox
+.textbox{
+    display: flex;
+    flex-direction: column;
+    font-family: $coromorant;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.textbox span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-heading{
+    height: 25px;
+    padding: 0 10px;
+    font-size: 15px;
+    font-family: $roboto-slab;
+    margin: 20px 0 15px 0;
+    letter-spacing: 1.1px;
+}
+
+.text-title{
+    height: 40%;
+    width: 100%;
+}
+
+.text-content{
+    height: 20%;
+    width: 50%;
+    font-size: 15px;
+}
+
+.author{
+    height: 5%;
+    font-size: 12px;
+    font-family: $roboto-slab;
+    margin: 15px 0 0 0;
+}
+
+//profile
+
+.profile {
+    height: 80%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image{
+    height: 65%;
+}

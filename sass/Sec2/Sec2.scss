@@ -1,0 +1,45 @@
+.Sec2{
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sec2-p1{
+    height: 70%;
+    width: 92%;
+    border-top: 2px solid #AEAEAC;
+    border-top-style: dotted;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.streetMan{
+    height: 400px;
+    margin: 0 100px 0 0;
+}
+
+.Sec2-p2{
+    height: 20%;
+    width: 92%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.p2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.p2-img{
+    height: 120px;
+    width: 180px;
+    margin: 0 25px 0 0;
+}
