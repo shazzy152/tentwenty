@@ -14,7 +14,7 @@ const Profile = ({image, imageSize, content, smaller, small, titleFontSize, widt
       {!flip ? 
       (
         <>
-          <img style={{"height":`${imageSize}%`, "margin" : row ? `0 30px 0 0` : null}} className="profile-image" src={`/content/${image}.svg`} alt="profile-image" />
+          <img style={{"height":`${imageSize}%`, "margin" : row ? `0 30px 0 0` : null}} className="profile-image" src={`/content/${image}.png`} alt="profile-image" />
           <TextBox 
             textAlign={textAlign ? textAlign : "center"} 
             heading={heading ? heading : "Zelenskyy"} 
@@ -36,7 +36,7 @@ const Profile = ({image, imageSize, content, smaller, small, titleFontSize, widt
             titleFontSize={titleFontSize}
             titleWidth={titleWidth}
           />
-          <img style={{"height":`${imageSize}%`, "margin":`12px`}} className="profile-image" src={`/content/${image}.svg`} alt="profile-image" />
+          <img style={{"height":`${imageSize}%`, "margin":`12px`}} className="profile-image" src={`/content/${image}.png`} alt="profile-image" />
         </>
       )}
     </div>

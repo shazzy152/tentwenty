@@ -11,7 +11,7 @@ const Landing = () => {
               titleFontSize={30}
               authorFont={14}
             />
-            <img className="lady" src="/content/lady.svg" alt="lady" />
+            <img className="lady" src="/content/lady.png" alt="lady" />
         </div>
         <div className="land-sec-2">
             <TextBox 
@@ -28,7 +28,7 @@ const Landing = () => {
               textAlign={"left"}
               titleFontSize={18}
             />
-            <img className="audi" src="/content/audi.svg" alt="audi" />
+            <img className="audi" src="/content/audi.png" alt="audi" />
             <TextBox 
               height={23}
               width={100}
@@ -38,7 +38,7 @@ const Landing = () => {
             />
         </div>
         <div className="land-sec-2">
-            <img className="burj" src="/content/burj.svg" alt="burj" />
+            <img className="burj" src="/content/burj.png" alt="burj" />
             <TextBox 
               height={23}
               width={100}
