@@ -1,7 +1,7 @@
 .landing-container{
-    height: 700px;
-    padding: 30px 0 50px 0;
-    width: 92%;
+    height: auto;
+    padding: 30px 0;
+    width: 92vw;
     display: flex;
     justify-content: flex-start;
     border-bottom: 2px solid #AEAEAC;
@@ -9,17 +9,18 @@
 }
 
 .land-sec-1{
-    height: 100%;
-    width: 50%;
+    height: auto;
+    width: 100%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 0 20px 0 0;
 }
 
 .land-sec-2{
-    height: 100%;
-    width: 25%;
+    height: auto;
+    width: 100%;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -28,16 +29,79 @@
 }
 
 .lady{
-    height: 75%;
+    height: 550px;
     margin: 15px 10px 0 0;
 }
 
 .audi {
-    height: 40%;
+    height: 300px;
     margin: 15px 0 0 0;
 }
 
 .burj{
-    height: 40%;
+    height: 300px;
     margin: 0 0 15px 0;
+}
+
+.land-sec-temp{
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1375px){
+    .lady{
+        height: 400px;
+    }
+
+    .audi {
+        height: 200px;
+    }
+
+    .burj {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .landing-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .land-sec-1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .lady{
+        width: 50%;
+    }
+    .land-sec-2{
+        width: 50%;
+    }
+    .land-sec-temp{
+        display: flex;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .lady{
+        height: 200px;
+    }
+
+    .audi {
+        height: 150px;
+    }
+
+    .burj {
+        height: 150px;
+    }
+    .land-sec-2{
+        justify-content: space-around;
+        margin: 0 10px 0 0;
+    }
+    .land-sec-1{
+        margin: 0;
+    }
 }

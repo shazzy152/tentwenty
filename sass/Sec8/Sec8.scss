@@ -1,12 +1,13 @@
 .Sec8{
-    height: 400px;
-    width: 92%;
+    height: auto;
+    width: 92vw;
     border-bottom: 2px solid #AEAEAC;
     border-bottom-style: dotted;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0 10px 0;
 }
 
 .sec8-p1{
@@ -23,4 +24,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media only screen and (max-width: 1250px){
+    .Sec8{
+        flex-direction: row;
+    }
+    .sec8-p1{
+        flex-direction: column;
+    }
+    .sec8-p2{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .Sec8{
+        flex-wrap: wrap;
+    }
 }

@@ -1,5 +1,5 @@
 .Footer{
-    height: 350px;
+    height: auto;
     width: 92%;
     padding: 20px 0;
     border-top: 2px solid #AEAEAC;
@@ -14,11 +14,11 @@
     height: 70%;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start
 }
 
 .footer-p2{
-    height: 30%;
+    height: auto;
     width: 100%;
     padding: 30px 0;
     font-weight: 700;
@@ -59,7 +59,7 @@
 }
 
 .footer-sub-1{
-    height: 80%;
+    height: 180px;
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@
     font-size: 20px;
 }
 
-.footer-sub-1 div{
+.email-box{
     width: 90%;
     padding: 20px 20px;
     display: flex;
@@ -81,6 +81,46 @@
     background-color: #F8F1E8;
 }
 
-.footer-sub-1 div span:nth-child(1){
+.email-box span:nth-child(1){
     font-size: 16px;
+}
+
+.footer-desc{
+    width: 70%;
+}
+
+@media only screen and (max-width: 980px){
+    .footer-p1{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    .footer-p2{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-gap: 10px;
+    }
+    .footer-sub{
+        width: 100%;
+    }
+    .footer-sub:nth-child(4){
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .email-box{
+        width: 100%;
+        flex-direction: column;
+    }
+    .email-box span:nth-child(1){
+        white-space: nowrap;
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    .email-box span:nth-child(2){
+        font-size: 12px;
+    }
+    .footer-desc{
+        width: 100%;
+        font-size: 12px;
+        margin: 10px 0;
+    }
 }

@@ -1,8 +1,9 @@
 .Sec9{
-    height: 450px;
+    height: auto;
     width: 92%;
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }

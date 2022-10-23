@@ -1,7 +1,7 @@
 .sec4{
-    height: 620px;
-    width: 92%;
-    padding: 20px 0 0 0;
+    height: auto;
+    width: 92vw;
+    padding: 20px 0;
     border-top: 2px solid #AEAEAC;
     border-top-style: dotted;
     position: relative;
@@ -16,17 +16,46 @@
 
 .sec4-title{
     position: absolute;
-    left: 39%;
-    top: 57%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: $poppins;
     font-size: 20px;
     font-weight: 700;
     color: white;
+    margin: 20px 0;
 }
 
 .sec4-textbox{
     position: absolute;
-    left: 28%;
-    bottom: 10%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+}
+
+@media only screen and (max-width: 1010px){
+    .sec4-title {
+        top: 40%;
+    }
+    .sec4-textbox {
+        top: 70%;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .sec4-img{
+        height: 300px;
+        width: 100%;
+    }
+    .sec4-textbox{
+        width: 100%;
+    }
+    .sec4-title {
+        font-size: 16px;
+    }
 }

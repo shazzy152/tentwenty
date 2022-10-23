@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TextBox from '../common/TextBox';
 
 const Sec2 = () => {
+
+    const [matches, setMatches] = useState(
+        window.matchMedia("(max-width: 490px)").matches
+      )
+    
+        useEffect(() => {
+        window
+        .matchMedia("(max-width: 490px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+        }, []);
+
   return (
     <div className="Sec2">
         <div className="Sec2-p1">
             <img className="streetMan" src="/content/streetMan.png" alt="streetMan" />
-            <TextBox contentWidth={80} height={50} width={40} textAlign={"left"} titleFontSize={30} />
+            {!matches && (<TextBox contentWidth={80} height={50} width={40} textAlign={"left"} titleFontSize={30} />)}
+            {matches && (<TextBox contentWidth={80} height={50} width={86} textAlign={"left"} titleFontSize={30} />)}
         </div>
         <div className="Sec2-p2">
             <div className="p2">

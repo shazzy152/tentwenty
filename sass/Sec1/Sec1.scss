@@ -1,18 +1,20 @@
 .Sec1{
-    height: 300px;
-    width: 100%;
+    height: auto;
+    width: 92vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Sec1-container{
-    width: 92%;
-    height: 100%;
+    height: auto;
+    width: 100%;
     background-color: #F8F1E8;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 90px;   
+    padding: 20px 80px 0 80px;  
+    flex-wrap: wrap; 
+    margin: 0 0 20px 0;
 }

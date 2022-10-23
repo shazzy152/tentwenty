@@ -37,8 +37,8 @@ const Footer = () => {
             <div className="footer-sub">
                 <div className="footer-sub-1">
                     <span>SUBSCRIBE</span>
-                    <span style={{"width": `70%`}} >Get fresh updates about  the fashion, beauty, trends</span>
-                    <div>
+                    <span className="footer-desc" >Get fresh updates about the fashion, beauty, trends</span>
+                    <div className="email-box">
                         <span>Enter your email below</span>
                         <span>Submit</span>
                     </div>

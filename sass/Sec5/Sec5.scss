@@ -1,15 +1,16 @@
 .Sec5{
-    height: 500px;
-    width: 92%;
+    height: auto;
+    width: 92vw;
     box-sizing: border-box;
     border-bottom: 2px solid #AEAEAC;
     border-bottom-style: dotted;
     display: flex;
-    padding: 50px 0;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 0 20px 0;
+    flex-wrap: wrap;
 }
 
 .sec5-p1{
-    height: 100%;
-    width: 33%;
+    margin: 10px 0;
 }

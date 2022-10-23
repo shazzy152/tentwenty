@@ -13,53 +13,55 @@ const Landing = () => {
             />
             <img className="lady" src="/content/lady.png" alt="lady" />
         </div>
-        <div className="land-sec-2">
-            <TextBox 
-              height={23}
-              width={100}
-              small={true}
-              textAlign={"left"}
-              titleFontSize={18}
-            />
-            <TextBox 
-              height={23}
-              width={100}
-              small={true}
-              textAlign={"left"}
-              titleFontSize={18}
-            />
-            <img className="audi" src="/content/audi.png" alt="audi" />
-            <TextBox 
-              height={23}
-              width={100}
-              small={true}
-              textAlign={"left"}
-              titleFontSize={18}
-            />
-        </div>
-        <div className="land-sec-2">
-            <img className="burj" src="/content/burj.png" alt="burj" />
-            <TextBox 
-              height={23}
-              width={100}
-              small={true}
-              textAlign={"left"}
-              titleFontSize={18}
-            />
-            <TextBox 
-              height={23}
-              width={100}
-              small={true}
-              textAlign={"left"}
-              titleFontSize={18}
-            />
-            <TextBox 
-              height={23}
-              width={100}
-              small={true}
-              textAlign={"left"}
-              titleFontSize={18}
-            />
+        <div className="land-sec-temp">
+          <div className="land-sec-2">
+              <TextBox 
+                height={23}
+                width={100}
+                small={true}
+                textAlign={"left"}
+                titleFontSize={18}
+              />
+              <TextBox 
+                height={23}
+                width={100}
+                small={true}
+                textAlign={"left"}
+                titleFontSize={18}
+              />
+              <img className="audi" src="/content/audi.png" alt="audi" />
+              <TextBox 
+                height={23}
+                width={100}
+                small={true}
+                textAlign={"left"}
+                titleFontSize={18}
+              />
+          </div>
+          <div className="land-sec-2">
+              <img className="burj" src="/content/burj.png" alt="burj" />
+              <TextBox 
+                height={23}
+                width={100}
+                small={true}
+                textAlign={"left"}
+                titleFontSize={18}
+              />
+              <TextBox 
+                height={23}
+                width={100}
+                small={true}
+                textAlign={"left"}
+                titleFontSize={18}
+              />
+              <TextBox 
+                height={23}
+                width={100}
+                small={true}
+                textAlign={"left"}
+                titleFontSize={18}
+              />
+          </div>
         </div>
     </div>
   )

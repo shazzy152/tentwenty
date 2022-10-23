@@ -1,6 +1,6 @@
 .Sec7 {
-    height: 480px;
-    width: 92%;
+    height: auto;
+    width: 92vw;
     padding: 20px 0;
     border-top: 2px solid #AEAEAC;
     border-top-style: dotted;
@@ -11,8 +11,10 @@
 .sec7-p1 {
     height: 100%;
     width: 100%;
+    padding: 10px 0;
     background-color: #f8f1e8;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }

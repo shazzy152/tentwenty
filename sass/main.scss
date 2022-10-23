@@ -6,10 +6,12 @@
 $roboto-slab: 'Roboto Condensed', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $coromorant: 'Cormorant', serif;
+$image: url('sec6-img.svg');
 
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
