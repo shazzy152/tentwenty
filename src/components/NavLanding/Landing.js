@@ -1,16 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TextBox from '../common/TextBox'
 
 const Landing = () => {
+
+  const [matches, setMatches] = useState(
+    window.matchMedia("(max-width: 490px)").matches
+  )
+
+    useEffect(() => {
+    window
+    .matchMedia("(max-width: 490px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+    }, []);
+
   return (
     <div className="landing-container">
         <div className="land-sec-1">
-            <TextBox 
+            {!matches && (<TextBox 
               height={40}
               textAlign={"center"}
               titleFontSize={30}
               authorFont={14}
-            />
+            />)}
+            {matches && (<TextBox 
+              height={40}
+              textAlign={"center"}
+              titleFontSize={30}
+              authorFont={14}
+              contentWidth={80}
+            />)}
             <img className="lady" src="/content/lady.png" alt="lady" />
         </div>
         <div className="land-sec-temp">

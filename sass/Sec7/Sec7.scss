@@ -9,12 +9,15 @@
 }
 
 .sec7-p1 {
-    height: 100%;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0 10px 0;
     background-color: #f8f1e8;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.sec7-p1 > * {
+    margin: 0 0 10px 0;
 }

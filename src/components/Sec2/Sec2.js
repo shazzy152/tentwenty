@@ -18,7 +18,7 @@ const Sec2 = () => {
         <div className="Sec2-p1">
             <img className="streetMan" src="/content/streetMan.png" alt="streetMan" />
             {!matches && (<TextBox contentWidth={80} height={50} width={40} textAlign={"left"} titleFontSize={30} />)}
-            {matches && (<TextBox contentWidth={80} height={50} width={86} textAlign={"left"} titleFontSize={30} />)}
+            {matches && (<TextBox contentWidth={80} height={50} width={96} textAlign={"left"} titleFontSize={30} />)}
         </div>
         <div className="Sec2-p2">
             <div className="p2">

@@ -18,11 +18,11 @@ const Sec6 = () => {
         <img className="sec6-img" src="/content/sec6-img.svg" alt="sec6-img" />
         <div className="sec6-p1">
             {!matches && (<TextBox heading={"HALF FULL"} contentWidth={100} contentFont={20} hideAuthor={true} textAlign={"left"} width={100} titleFontSize={35} height={100} />)}
-            {matches && (<TextBox heading={"HALF FULL"} contentWidth={100} contentFont={15} hideAuthor={true} textAlign={"left"} width={100} titleFontSize={25} height={100} />)}
+            {matches && (<TextBox heading={"HALF FULL"} contentWidth={100} contentFont={15} hideAuthor={true} textAlign={"left"} width={100} titleFontSize={25} height={90} />)}
         </div>
         <div className="sec6-p2">
             {!matches && (<TextBox heading={"HALF EMPTY"} blur={true} contentWidth={100} contentFont={20} hideAuthor={true} textAlign={"left"} width={100} titleFontSize={35} height={100} />)}
-            {matches && (<TextBox heading={"HALF EMPTY"} blur={true} contentWidth={100} contentFont={15} hideAuthor={true} textAlign={"left"} width={100} titleFontSize={25} height={100} />)}
+            {matches && (<TextBox heading={"HALF EMPTY"} blur={true} contentWidth={100} contentFont={15} hideAuthor={true} textAlign={"left"} width={100} titleFontSize={25} height={90} />)}
         </div>
         <span className="sec6-heading">ONE STORY, TWO PERSPECTIVES</span>
     </div>
