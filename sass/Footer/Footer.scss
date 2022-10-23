@@ -81,6 +81,18 @@
     background-color: #F8F1E8;
 }
 
+.email-box-dark{
+    padding: 5px 5px 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+}
+
+.email-box-dark span:nth-child(2){
+    color: black;
+    background-color: white;
+    padding: 15px;
+}
+
 .email-box span:nth-child(1){
     font-size: 16px;
 }
@@ -122,5 +134,11 @@
         width: 100%;
         font-size: 12px;
         margin: 10px 0;
+    }
+    .email-box-dark{
+        padding: 10px 20px;
+    }
+    .email-box-dark span:nth-child(2){
+        padding: 5px;
     }
 }

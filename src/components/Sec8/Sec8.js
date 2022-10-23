@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Profile from '../common/Profile';
 
-const Sec8 = () => {
+const Sec8 = ({globalTheme}) => {
 
     const [matches, setMatches] = useState(
         window.matchMedia("(max-width: 490px)").matches
@@ -28,7 +28,8 @@ const Sec8 = () => {
                     small={true} 
                     textAlign={"left"} 
                     row={true}
-                    heading={"KETO KABABS"} 
+                    heading={"KETO KABABS"}
+                    theme={globalTheme === true ? 'light' : 'dark'} 
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -41,7 +42,8 @@ const Sec8 = () => {
                     small={true} 
                     textAlign={"left"} 
                     row={true}
-                    heading={"ITALIAN DESERTS"} 
+                    heading={"ITALIAN DESERTS"}
+                    theme={globalTheme === true ? 'light' : 'dark'} 
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -54,7 +56,8 @@ const Sec8 = () => {
                     small={true} 
                     textAlign={"left"} 
                     row={true}
-                    heading={""}          
+                    heading={""}  
+                    theme={globalTheme === true ? 'light' : 'dark'}        
                 />
             </div>
             <div className="sec8-p2">
@@ -70,6 +73,7 @@ const Sec8 = () => {
                     textAlign={"left"} 
                     row={true}
                     heading={""} 
+                    theme={globalTheme === true ? 'light' : 'dark'}
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -83,6 +87,7 @@ const Sec8 = () => {
                     textAlign={"left"} 
                     row={true}
                     heading={""} 
+                    theme={globalTheme === true ? 'light' : 'dark'}
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -95,7 +100,8 @@ const Sec8 = () => {
                     small={true} 
                     textAlign={"left"} 
                     row={true}
-                    heading={""}                  
+                    heading={""}     
+                    theme={globalTheme === true ? 'light' : 'dark'}             
                 />
             </div>
         </>)}
@@ -113,6 +119,7 @@ const Sec8 = () => {
                     textAlign={"left"} 
                     row={true}
                     heading={"KETO KABABS"} 
+                    theme={globalTheme === true ? 'light' : 'dark'}
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -126,6 +133,7 @@ const Sec8 = () => {
                     textAlign={"left"} 
                     row={true}
                     heading={"KOREAN BBQ"} 
+                    theme={globalTheme === true ? 'light' : 'dark'}
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -138,7 +146,8 @@ const Sec8 = () => {
                     small={true} 
                     textAlign={"left"} 
                     row={true}
-                    heading={"FRENCH PASTA"}          
+                    heading={"FRENCH PASTA"}  
+                    theme={globalTheme === true ? 'light' : 'dark'}        
                 />
             </div>
             <div className="sec8-p2">
@@ -154,6 +163,7 @@ const Sec8 = () => {
                     textAlign={"left"} 
                     row={true}
                     heading={"KETO KABABS"} 
+                    theme={globalTheme === true ? 'light' : 'dark'}
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -167,6 +177,7 @@ const Sec8 = () => {
                     textAlign={"left"} 
                     row={true}
                     heading={"KOREAN BBQ"} 
+                    theme={globalTheme === true ? 'light' : 'dark'}
                 />
                 <Profile 
                     image={"sec8-img"}
@@ -179,7 +190,8 @@ const Sec8 = () => {
                     small={true} 
                     textAlign={"left"} 
                     row={true}
-                    heading={"FRENCH PASTA"}          
+                    heading={"FRENCH PASTA"} 
+                    theme={globalTheme === true ? 'light' : 'dark'}         
                 />
             </div>
         </>)}

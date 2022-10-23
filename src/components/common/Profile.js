@@ -1,7 +1,7 @@
 import React from 'react';
 import TextBox from './TextBox';
 
-const Profile = ({image, imageSize, content, smaller, small, titleFontSize, width, height, titleWidth, flip, textAlign, heading, row, imageWidth}) => {
+const Profile = ({image, imageSize, content, smaller, small, titleFontSize, width, height, titleWidth, flip, textAlign, heading, row, imageWidth, theme}) => {
 
   return (
     <div 
@@ -23,6 +23,7 @@ const Profile = ({image, imageSize, content, smaller, small, titleFontSize, widt
             small={small}
             titleFontSize={titleFontSize}
             titleWidth={titleWidth}
+            theme={theme}
           />
         </>
         )  : (
@@ -35,6 +36,7 @@ const Profile = ({image, imageSize, content, smaller, small, titleFontSize, widt
             small={small}
             titleFontSize={titleFontSize}
             titleWidth={titleWidth}
+            theme={theme}
           />
           <img style={{"height":`${imageSize}%`, "margin":`12px`}} className="profile-image" src={`/content/${image}.png`} alt="profile-image" />
         </>

@@ -1,5 +1,6 @@
 .Sec6 {
-    background-color: #F8F1E8;
+    color: var(--text-primary-sec);
+    background-color: var(--background-sec);
     box-sizing: border-box;
     height: auto;
     width: 92vw;
@@ -37,8 +38,8 @@
     height: 25px;
     font-size: 18px;
     font-family: $roboto-slab;
-    background-color: black;
-    color: white;
+    color: var(--text-primary);
+    background-color: var(--background);
     font-weight: 700;
     padding: 5px 15px;
     position: absolute;

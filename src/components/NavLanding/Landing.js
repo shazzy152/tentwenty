@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TextBox from '../common/TextBox'
 
-const Landing = () => {
+const Landing = ({globalTheme}) => {
 
   const [matches, setMatches] = useState(
     window.matchMedia("(max-width: 490px)").matches
@@ -21,6 +21,7 @@ const Landing = () => {
               textAlign={"center"}
               titleFontSize={30}
               authorFont={14}
+              theme={globalTheme === true ? 'light' : 'dark'}
             />)}
             {matches && (<TextBox 
               height={40}
@@ -28,6 +29,7 @@ const Landing = () => {
               titleFontSize={30}
               authorFont={14}
               contentWidth={80}
+              theme={globalTheme === true ? 'light' : 'dark'}
             />)}
             <img className="lady" src="/content/lady.png" alt="lady" />
         </div>
@@ -40,6 +42,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={100}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <TextBox 
                 height={23}
@@ -47,6 +50,7 @@ const Landing = () => {
                 small={true}
                 textAlign={"left"}
                 titleFontSize={18}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <img className="audi" src="/content/audi.png" alt="audi" />
               <TextBox 
@@ -55,6 +59,7 @@ const Landing = () => {
                 small={true}
                 textAlign={"left"}
                 titleFontSize={18}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
           </div>)}
           {!matches && (<div className="land-sec-2">
@@ -65,6 +70,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={80}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <TextBox 
                 height={23}
@@ -73,6 +79,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={80}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <img className="audi" src="/content/audi.png" alt="audi" />
               <TextBox 
@@ -82,6 +89,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={80}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
           </div>)}
           {matches && (<div className="land-sec-2">
@@ -92,6 +100,7 @@ const Landing = () => {
                 small={true}
                 textAlign={"left"}
                 titleFontSize={18}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <TextBox 
                 height={23}
@@ -99,6 +108,7 @@ const Landing = () => {
                 small={true}
                 textAlign={"left"}
                 titleFontSize={18}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <TextBox 
                 height={23}
@@ -106,6 +116,7 @@ const Landing = () => {
                 small={true}
                 textAlign={"left"}
                 titleFontSize={18}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
           </div>)}
           {!matches && (<div className="land-sec-2">
@@ -117,6 +128,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={80}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <TextBox 
                 height={23}
@@ -125,6 +137,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={80}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
               <TextBox 
                 height={23}
@@ -133,6 +146,7 @@ const Landing = () => {
                 textAlign={"left"}
                 titleFontSize={18}
                 titleWidth={80}
+                theme={globalTheme === true ? 'light' : 'dark'}
               />
           </div>)}
         </div>

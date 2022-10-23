@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
-const NavBar = () => {
+const NavBar = ({setGlobalTheme}) => {
+
+    const [theme, setTheme] = useState(false);
+
+    const setCurrentTheme = () => {
+        setTheme(theme => !theme)
+        setGlobalTheme(theme)
+    }
+
   return (
     <div className="NavBar">
         <div className="nav-sec-1">
             <div className="menu-container">
                 <img className="hamburger" src="/content/hamburger.svg" alt="hamburger" />
                 <span className="menu-button">MENU</span>
-                <img className="moon" src="/content/moon.png" alt="moon" />
+                <img onClick={setCurrentTheme} className="moon" src="/content/moon.png" alt="moon" />
             </div>
             <div className="logo-container">
                 <img className="todayLogo" src="/content/Logo.svg" alt="logo" />

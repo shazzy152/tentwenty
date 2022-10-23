@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({globalTheme}) => {
   return (
     <div className="Footer">
         <div className="footer-p1">
@@ -38,7 +38,7 @@ const Footer = () => {
                 <div className="footer-sub-1">
                     <span>SUBSCRIBE</span>
                     <span className="footer-desc" >Get fresh updates about the fashion, beauty, trends</span>
-                    <div className="email-box">
+                    <div className={globalTheme == true ? "email-box" : "email-box email-box-dark"}>
                         <span>Enter your email below</span>
                         <span>Submit</span>
                     </div>

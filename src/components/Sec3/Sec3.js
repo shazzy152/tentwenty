@@ -1,17 +1,18 @@
 import React from 'react';
 import Profile from '../common/Profile'
 
-const Sec3 = () => {
+const Sec3 = ({globalTheme}) => {
   return (
     <div className="Sec3">
-        <div className="Sec3-p1">
+        <div sec-theme={globalTheme === true ? 'light' : 'dark'} className="Sec3-p1">
             <Profile 
                 imageSize={70} 
                 image={"omar"}
                 content={"Meals on wheels: Meals on wheels: best in the UAE best in Meals on wheels: best in"}
                 small={true}
                 titleFontSize={18}
-                heading={"OMAR"} 
+                heading={"OMAR"}
+                theme={globalTheme === true ? 'light' : 'dark'} 
             />
             <Profile 
                 imageSize={70} 
@@ -19,7 +20,8 @@ const Sec3 = () => {
                 content={"Meals on wheels: Meals on wheels: best in the UAE best in Meals on wheels: best in"}
                 small={true}
                 titleFontSize={18}
-                heading={"LARRY"} 
+                heading={"LARRY"}
+                theme={globalTheme === true ? 'light' : 'dark'} 
             />
             <Profile 
                 imageSize={70} 
@@ -27,7 +29,8 @@ const Sec3 = () => {
                 content={"Meals on wheels: Meals on wheels: best in the UAE best in Meals on wheels: best in"}
                 small={true}
                 titleFontSize={18}
-                heading={"LUBNA"} 
+                heading={"LUBNA"}
+                theme={globalTheme === true ? 'light' : 'dark'} 
             />
             <Profile 
                 imageSize={70} 
@@ -36,6 +39,7 @@ const Sec3 = () => {
                 small={true}
                 titleFontSize={18}
                 heading={"SHAWN"} 
+                theme={globalTheme === true ? 'light' : 'dark'}
             />
         </div>
     </div>

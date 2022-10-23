@@ -8,11 +8,43 @@ $poppins: 'Poppins', sans-serif;
 $coromorant: 'Cormorant', serif;
 $image: url('sec6-img.svg');
 
+[main-theme='light'] {
+	--background: white;
+	--text-primary: black;
+  }
+
+[main-theme='dark'] {
+	--background: #3D3D3D;
+	--text-primary: white;
+  }
+
+[textBox-theme='light'] {
+    --background: black;
+	--text-primary: white;
+}
+
+[textBox-theme='dark'] {
+    --background: white;
+	--text-primary: black;
+}
+
+[sec-theme='light'] {
+    --background-sec: #F8F1E8;
+    --text-primary-sec: black;
+}
+
+[sec-theme='dark'] {
+    --background-sec: #3F3E3D;
+    --text-primary-sec: white;
+}
+
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--text-primary);
+    background-color: var(--background);
 }
 
 //default imports

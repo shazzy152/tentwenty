@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from './NavBar'
 import Landing from './Landing'
 
-const NavLanding = () => {
+const NavLanding = ({setGlobalTheme, globalTheme}) => {
   return (
     <div className="NavLanding">
-        <Navbar />
-        <Landing />
+        <Navbar setGlobalTheme={setGlobalTheme} />
+        <Landing globalTheme={globalTheme} />
     </div>
   )
 }

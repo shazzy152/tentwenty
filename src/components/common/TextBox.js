@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const TextBox = ({
     height,
@@ -15,7 +15,8 @@ const TextBox = ({
     titleWidth,
     hideAuthor,
     contentFont,
-    blur
+    blur,
+    theme
 }) => {
 
   return (
@@ -27,18 +28,15 @@ const TextBox = ({
             "alignItems": textAlign === `left` ? "flex-start" : "center"
         }}
         className="textbox">
-            {! smallest && <span style={{
-                "backgroundColor": !blur ? "black" : "rgba(0, 0, 0, 0)",
-                "border": "1px solid black",
-                "color": !blur ? "white" : "black"
-            }} className="text-heading">{heading ? heading : "TRAVEL"}</span>}
+            {!smallest && <span textBox-theme={theme} className={(theme === 'light' && blur) ? "text-heading blur" : (theme === 'dark' && blur) ? "text-heading anti-blur" : "text-heading"}>{heading ? heading : "TRAVEL"}</span>}
             <span 
                 className="text-title" 
                 style={{
                     "textAlign": `${textAlign}`,
                     "fontSize": titleFontSize,
                     "width": `${titleWidth}%`,
-                    "color": blur ? "rgba(0, 0, 0, 0.3)" : null
+                    "color": (theme === 'light' && blur) ? "rgba(0, 0, 0, 0.3)" : (theme === 'dark' && blur) ? "white" : null,
+                    "opacity": (theme === 'dark' && blur) ? "0.3" : null
                 }}>
                 {title ? title : "Louvre Abu Dhabi marks 4th anniversary with world class exhibitions, programming for all"}
             </span>
@@ -49,7 +47,8 @@ const TextBox = ({
                         "textAlign": `${textAlign}`,
                         "width": `${contentWidth}%`,
                         "fontSize": `${contentFont}px`,
-                        "color": blur ? "rgba(0, 0, 0, 0.3)" : null
+                        "color": (theme === 'light' && blur) ? "rgba(0, 0, 0, 0.3)" : (theme === 'dark' && blur) ? "white" : null,
+                        "opacity": (theme === 'dark' && blur) ? "0.3" : null
                     }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in odio vel risus dignissim interdum.
                 </span>}
